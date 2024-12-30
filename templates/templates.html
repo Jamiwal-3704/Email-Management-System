@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Templates</title>
+</head>
+<body>
+    <h1>Template Management</h1>
+    <form method="POST">
+        <textarea name="template" placeholder="Enter new template"></textarea>
+        <button type="submit">Save Template</button>
+    </form>
+
+    <h2>Saved Templates:</h2>
+    <ul>
+        {% for template in templates %}
+            <li>{{ template[0] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

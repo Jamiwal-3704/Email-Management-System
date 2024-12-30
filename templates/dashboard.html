@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Dashboard</title>
+</head>
+<body>
+    <h1>Email Dashboard</h1>
+    <form method="POST">
+        <textarea name="email_content" placeholder="Paste email content here..."></textarea>
+        <button type="submit">Generate Response</button>
+    </form>
+    {% if ai_response %}
+        <h2>Generated Response:</h2>
+        <p>{{ ai_response }}</p>
+    {% endif %}
+</body>
+</html>

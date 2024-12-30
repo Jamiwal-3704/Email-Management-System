@@ -1,0 +1,11 @@
+# flask
+# transformers
+# torch
+# smtplib
+# imaplib
+# sqlite3
+
+
+flask
+transformers
+torch==2.5.1 # Replace with the installed version
